@@ -25,11 +25,9 @@ namespace Tyuiu.SpirinIS.Sprint5.TaskReview.V15.Lib
             string[] words = word.Split(' ');
             for (int i = 0; i <= words.Length - 1; i++)
             {
-                if(words[i].Length == 2)
+                if(words[i].Length != 2)
                 {
-                    string part = Convert.ToString(words[i]);
-                    word = word.Replace(part,"");
-                    newText = word;
+                    newText += words[i] + " ";
                     
                 }
                 
